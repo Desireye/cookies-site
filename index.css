@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/*Typography*/
+h1 {
+    font-size: 5rem;
+    color: #1b263b;
+}
+.main-content p {
+    font-size: 1.5rem;
+    display: block;
+    color: #415a77;
+}
+.things-to-do p {
+    color: white;
+}
+section h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+#pop-up-content h3 {
+    font-size: 1.6rem;
+}
+.highlighted-text {
+    color: #a100f2;
+}
+#pop-up-content p {
+    margin-top: 9%;
+    font-size: 1.1rem;
+}
+
+/*main*/
+.main-content {
+    text-align: center;
+    margin: 5% 0;
+}
+.things-to-do {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.do {
+    background: yellowgreen;
+    width: 23rem;
+    padding: 1%;
+    text-align: left;
+    border-radius: 0.5rem;
+}
+.this {
+    background: #a2d2ff;
+}
+.that {
+    background: #ffafcc;
+}
+.thisnthat {
+    background: #cdb4db;
+}
+
+/*Pop-up*/
+#pop-up {
+    background: #0d1b2a;
+    height: 34rem;
+    width: 25rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+    padding: 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.pop-up-exit-btn-container {
+    text-align: right;
+}
+#exit-btn {
+    color: gainsboro;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+
+}
+#exit-btn:hover,
+#exit-btn:active,
+#exit-btn:focus {
+    color: #d90429;
+}
+form input {
+    margin-top: 6%;
+    padding: 3%;
+    width: 19rem;
+}
+form button {
+    padding: 4%;
+    width: 9rem;
+    margin-top: 7%;
+    border-radius: 0.3rem;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    background: #a100f2;
+    border: none;
+}
+form button:hover,
+form button:active {
+    background: #61078e;
+}
+.form-btns-container {
+    display: flex;
+    gap: 1rem;
+}
+#form-btns-container .reverse {
+    flex-direction: row-reverse;
+}
+.load-gif {
+    width: 11rem;
+    display: block;
+    margin: auto;
+}
+#upload-p {
+    text-align: center;
+}
+.end-gif {
+    margin-top: 10%;
+    width: 19rem;
+}

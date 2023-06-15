@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>this Site</title>
+</head>
+<body>
+    <main>
+        <div class="main-content">
+            <h1>Welcome to this Site!</h1>
+            <p>This is a totally cool site about things you don't know 
+                about...but you can.
+            </p>
+            <p>You can learn to: </p>
+
+            <div class="things-to-do">
+                <div class="do this">
+                    <p>🔮 Do this thing!</p>
+                </div>
+                <div class="do that">
+                    <p>☄️ Do that thing!</p>
+                </div>
+                <div class="do thisnthat">
+                    <p>🌌 Do this <i>and</i> that!</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Here's how!</h2>
+            <p></p>
+        </section>
+    </main>
+
+    <div id="pop-up">
+        <div class="pop-up-exit-btn-container">
+            <button id="exit-btn" disabled>X</button>
+        </div>
+        <div id="pop-up-content">
+            <h3>We at <span class="highlighted-text">❝this Site❞</span>
+                care about you and your data!
+            </h3>
+            <p id="pop-up-text">And in order for us to handle it with the utmost 
+                care and love, we'll need you give us your data.
+                <br>
+                Hence why we need you to fill our the form down below.
+                We definitly won't sell it or anything :D
+            </p>
+
+            <form id="consent-form" action="">
+                <input type="text" 
+                name="fullName" 
+                id="fullName" 
+                aria-label="fullName" 
+                placeholder="Please enter your full name here" required>
+
+                <input type="email" 
+                name="email" 
+                id="email" 
+                aria-label="email" 
+                placeholder="example@email.com" required>
+                
+                <div class="form-btns-container">
+                    <button id="accept-btn" type="submit">Accept</button>
+                    <button id="decline-btn">Decline</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="./index.js"></script>
+</body>
+</html>
