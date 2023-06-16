@@ -8,37 +8,50 @@
 body {
     min-height: 100vh;
     max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(239, 237, 232);
     font-family: 'Oxygen', sans-serif;
 }
 
 /*Typography*/
-h1 {
+.main-content h1 {
     font-size: 5rem;
     color: #1b263b;
 }
 .main-content p {
     font-size: 1.5rem;
-    display: block;
     color: #415a77;
 }
 .things-to-do p {
     color: white;
 }
-section h2 {
-    font-size: 3rem;
+section {
     text-align: center;
 }
+section h2 {
+    font-size: 3rem;
+    color: #1b263b;
+    margin: 2% 0;
+
+}
+section p {
+    font-size: 1rem;
+    color: #415a77;
+    margin-top: 3%;
+    width: 50%;
+    margin: auto;
+}
 #pop-up-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .highlighted-text {
     color: #a100f2;
 }
 #pop-up-content p {
-    margin-top: 9%;
+    margin-top: 8%;
     font-size: 1.1rem;
+}
+.sike {
+    font-size: 2rem;
 }
 
 /*main*/
@@ -53,6 +66,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 5%;
 }
 .do {
     background: yellowgreen;
@@ -100,7 +114,7 @@ section h2 {
 #exit-btn:hover,
 #exit-btn:active,
 #exit-btn:focus {
-    color: #d90429;
+    color: #a0031d;
 }
 form input {
     margin-top: 6%;
@@ -121,11 +135,12 @@ form button:hover,
 form button:active {
     background: #61078e;
 }
-.form-btns-container {
+.btn-container {
     display: flex;
+    justify-content: center;
     gap: 1rem;
 }
-#form-btns-container .reverse {
+.reverse {
     flex-direction: row-reverse;
 }
 .load-gif {
@@ -139,4 +154,53 @@ form button:active {
 .end-gif {
     margin-top: 10%;
     width: 19rem;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 30rem) {
+    /*Typography*/
+    .main-content h1 {
+        font-size: 4rem;
+    }
+    .main-content p {
+        font-size: 1.2rem;
+        margin-top: 10%;
+    }
+    #pop-up-content h3 {
+        font-size: 1.2rem;
+    }
+    #pop-up-content p {
+        margin-top: 9%;
+        font-size: 0.95rem;
+        margin-bottom: 5%;
+    }
+    section p {
+        width: 100%;
+    }
+
+    /*Main*/
+    .do {
+        width: 18rem;
+        padding: 5%;
+    }
+    .do p {
+        margin-top: 0;
+    }
+
+    /*Pop-up*/
+    #pop-up {
+        width: 20rem;
+        height: 30.5rem;
+        padding: 11%;
+    }
+    form input {
+        margin-top: 6%;
+        padding: 3%;
+        width: 15rem;
+    }
+    .end-gif {
+        margin-top: 10%;
+        width: 15rem;
+    }    
+   
 }

@@ -2,7 +2,6 @@ const consentForm = document.getElementById("consent-form")
 const exitBtn = document.getElementById("exit-btn")
 const acceptBtn = document.getElementById("accept-btn")
 const declineBtn = document.getElementById("decline-btn")
-const btnsContainer = document.getElementById("form-btns-container")
 const popUp = document.getElementById("pop-up")
 const popUpText = document.getElementById("pop-up-text")
 
@@ -17,8 +16,7 @@ exitBtn.addEventListener("click", function() {
 })
 
 declineBtn.addEventListener("mouseover", function() {
-    btnsContainer.classList.toggle("reverse")
-    console.log("hover")
+    declineBtn.style.display = "none"
 }) 
 
 consentForm.addEventListener("submit", function(e) {
@@ -38,9 +36,10 @@ consentForm.addEventListener("submit", function(e) {
     setTimeout(function() {
         document.getElementById("pop-up-content").innerHTML =
         `<h2>Ha! <span class="highlighted-text">${fullName}</span>, you absolute knob!<?h2>
-        <p>Thank you for selling your soul, I'll use the money to buy an S23!</p>
+        <p>Thanks for selling your soul, I'll use the money to buy an S23!</p>
         <img class="end-gif" src="./200.webp" alt="">`
 
+        exitBtn.style.cursor = "auto"
         exitBtn.disabled = false
     }, 6000)
 })
